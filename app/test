@@ -1,0 +1,19 @@
+// Route for user authentication
+// Route::post('/login', function (Request $request) {
+//     $credentials = $request->only('email', 'password');
+//     if (Auth::attempt($credentials)) {
+//         return response()->json(['message' => 'Login successful']);
+//     }
+//     return response()->json(['message' => 'Invalid credentials'], 401);
+// });
+// Route for user registration
+// Route::post('/register', function (Request $request) {
+//     $data = $request->validate([
+//         'name' => 'required|string|max:255',
+//         'email' => 'required|string|email|max:255|unique:users',
+//         'password' => 'required|string|min:8|confirmed',
+//     ]);
+//     $data['password'] = bcrypt($data['password']);
+//     $user = \App\Models\User::create($data);
+//     return response()->json(['message' => 'User registered successfully', 'user' => $user], 201);
+// });
